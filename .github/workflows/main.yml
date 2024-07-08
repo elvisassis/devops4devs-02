@@ -6,15 +6,14 @@ on:
 
 jobs:
   CI:
-    runs-on: ubuntu-lastet
+    runs-on: ubuntu-latest
     steps:
       - name: Passo 01
         run: echo "Construir imagem da aplicação"
       - name: Passo 02
         run: echo "Publicar imagem no docker hub"
-
   CD:
-    runs-on: ubuntu-lastet
+    runs-on: ubuntu-latest
     steps:
       - name: Passo 01
         run: echo "Deploy da aplicação"
