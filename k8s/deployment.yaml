@@ -18,7 +18,7 @@ spec:
           image: postgres:13.15
           env:
             - name: POSTGRES_PASSWORD
-              value: Admin123
+              value: Admin1@3
             - name: POSTGRES_USER
               value: reviewfilmes
             - name: POSTGRES_DB
@@ -58,7 +58,7 @@ spec:
             - name: ASPNETCORE_HTTP_PORTS
               value: "8080"
             - name: ConnectionStrings__DefaultConnection
-              value: "Host=postgre;Database=reviewfilmes;Username=reviewfilmes;Password=Admin123"
+              value: "Host=postgre;Database=reviewfilmes;Username=reviewfilmes;Password=Admin1@3"
           ports:
             - containerPort: 8080
 ---
