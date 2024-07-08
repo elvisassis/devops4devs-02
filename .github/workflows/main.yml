@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Passo 01
+        needs: [CI]
         run: echo "Deploy da aplicação"
     
     
